@@ -26,7 +26,7 @@ var questions = [
 
 function gamePlay(question, answer){
   var userAnswer = readlineSync.question(question);
-  if (userAnswer.toUpperCase === answer.toUpperCase){
+  if (userAnswer.toUpperCase() === answer.toUpperCase()){
     console.log("You are right!!!");
     score++;
   }else{
